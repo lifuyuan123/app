@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <azsecuer.zhuoxin.com.app.SerchView.MyEditview
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </azsecuer.zhuoxin.com.app.SerchView.MyEditview>
+
+    <ListView
+        android:id="@+id/serch_listview"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

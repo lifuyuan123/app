@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group>
+    <item android:title="">
+        <menu >
+            <item android:title="关于我们"
+                android:id="@+id/s"
+                android:icon="@drawable/icon_aboutme"
+                >
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu >
+            <item android:title="设置"
+                android:id="@+id/a"
+                android:icon="@drawable/icon_select"
+                >
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu >
+            <item android:title="收藏"
+                android:id="@+id/d"
+                android:icon="@drawable/star_selected"
+                >
+            </item>
+        </menu>
+    </item>
+</group>
+
+</menu>

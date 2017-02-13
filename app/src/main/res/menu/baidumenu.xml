@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/putong"
+    android:title="普通地图"
+    ></item>
+    <item
+        android:id="@+id/weixing"
+        android:title="卫星地图"
+        android:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/shishi"
+        android:title="实时交通(off)"
+        android:showAsAction="never"
+        ></item>
+</menu>

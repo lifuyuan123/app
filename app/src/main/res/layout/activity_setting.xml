@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/seting_toolbar"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:title="App"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="开机启动"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ToggleButton
+            android:id="@+id/open_tog"
+            android:background="@drawable/setting_activity"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:textOff=""
+            android:textOn=""
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="通知图标"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ToggleButton
+            android:id="@+id/tongzhi"
+            android:background="@drawable/setting_activity"
+            android:layout_margin="10dp"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="帮助说明"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/ic_arrows_right"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

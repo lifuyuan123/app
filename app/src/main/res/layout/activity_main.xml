@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--toobal-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Main_toolbar"
+        app:title="App"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/Main_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--用于显示板块（fragment）帧布局-->
+            <FrameLayout
+                android:layout_weight="1"
+                android:id="@+id/Main_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <!--radiogroup部分-->
+            <TextView
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RadioGroup
+                android:layout_margin="5dp"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/radionews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/home_news"
+                    android:textSize="16dp"
+                    android:text="新闻" />
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/radiohot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/home_serch"
+                    android:textSize="16dp"
+                    android:text="搜索" />
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/radioserch"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:drawableTop="@drawable/home_hot"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:text="热点" />-->
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/radiomap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/home_news"
+                    android:textSize="16dp"
+                    android:text="地图" />
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/radioqq"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:drawableTop="@drawable/home_news"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:text="聊天" />-->
+
+            </RadioGroup>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="#98dab9"
+            android:layout_gravity="left"
+            app:menu="@menu/menu"
+            >
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

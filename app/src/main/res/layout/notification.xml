@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#4e4646"
+    android:layout_height="45dp">
+    <ImageView
+        android:id="@+id/notifi_iv"
+        android:src="@drawable/app"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_toRightOf="@+id/notifi_iv"
+        android:text="app"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@+id/notifi_iv"
+        android:text="点击查看详情"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
