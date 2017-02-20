@@ -7,7 +7,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import azsecuer.zhuoxin.com.app.Info.User;
 import azsecuer.zhuoxin.com.app.Manager.SharedpreferencesUtil;
+import azsecuer.zhuoxin.com.app.MySQL.MyHelperland;
 import azsecuer.zhuoxin.com.app.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -42,10 +44,10 @@ public class LoadingActivity extends BaseActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                Intent intent=new Intent(LoadingActivity.this,MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+                    Intent intent=new Intent(LoadingActivity.this,LandActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
 
             @Override
             public void onAnimationRepeat(Animation animation) {

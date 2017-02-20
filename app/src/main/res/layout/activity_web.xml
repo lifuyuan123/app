@@ -22,28 +22,28 @@
         android:background="@drawable/progressbar"/>
     <WebView
         android:id="@+id/webview"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </WebView>
-    <LinearLayout
-        android:id="@+id/web_linear"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ProgressBar
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerInParent="true"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="加载中..."
-            android:layout_marginTop="10dp"
-            android:layout_alignBottom="@+id/progressbar"
-            />
-    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/web_linear"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<ProgressBar-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="加载中..."-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_alignBottom="@+id/progressbar"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>

@@ -40,8 +40,8 @@ public class WebActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView(R.id.progress)
     ProgressBar progress;
-    @BindView(R.id.web_linear)
-    LinearLayout webLinear;
+//    @BindView(R.id.web_linear)
+//    LinearLayout webLinear;
     private String url;
     private boolean needupdata = false;
     private int data = 1;
@@ -55,10 +55,10 @@ public class WebActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             progress.setProgress(msg.arg1);
-            if(msg.arg1>50){
-                webLinear.setVisibility(View.GONE);
-                webview.setVisibility(View.VISIBLE);
-            }
+//            if(msg.arg1>50){
+//                webLinear.setVisibility(View.GONE);
+//                webview.setVisibility(View.VISIBLE);
+//            }
             if (msg.arg1 == 100) {
                 progress.setVisibility(View.GONE);
             }

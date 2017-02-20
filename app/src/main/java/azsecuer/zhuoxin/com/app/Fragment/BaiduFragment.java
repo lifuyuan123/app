@@ -319,6 +319,7 @@ public class BaiduFragment extends Fragment {
         strings.add("添加覆盖物");
         strings.add("模拟导航");
         strings.add("开始导航");
+        strings.add("清除覆盖物");
         arrayAdapter = new ArrayAdapter<String>(getContext(), R.layout.support_simple_spinner_dropdown_item, strings);
     }
 
@@ -425,7 +426,10 @@ public class BaiduFragment extends Fragment {
                     locationMode = MyLocationConfiguration.LocationMode.FOLLOWING;
                 } else if (((TextView) view).getText().equals("罗盘模式")) {
                     locationMode = MyLocationConfiguration.LocationMode.COMPASS;
-                }else if (((TextView) view).getText().equals("模拟导航")) {
+                }else if (((TextView) view).getText().equals("清除覆盖物")) {
+                    baiduMap.clear();
+                }
+                else if (((TextView) view).getText().equals("模拟导航")) {
                     Toast.makeText(getContext(), "模拟导航", Toast.LENGTH_SHORT).show();
                     if(mDestlacationData==null){
                         Toast.makeText(getContext(), "长按地图设置终点", Toast.LENGTH_SHORT).show();

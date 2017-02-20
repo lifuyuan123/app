@@ -31,6 +31,16 @@
             </item>
         </menu>
     </item>
+
+    <item android:title="">
+        <menu >
+            <item android:title="退出登陆"
+                android:id="@+id/out"
+                android:icon="@drawable/icon_select"
+                >
+            </item>
+        </menu>
+    </item>
 </group>
 
 </menu>
